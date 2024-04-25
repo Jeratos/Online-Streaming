@@ -1,0 +1,444 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    box-sizing: border-box;
+ 
+}
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    
+    min-width: 1050;
+    min-height: 100%;
+    background-color: #141414;
+}
+.signInContainer {
+    background-color: #efefee;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: #0654ba;
+}
+.column {
+    background-color: #fff;
+    min-height: 300px;
+    max-height: 100%;
+    width: 450px;
+    box-shadow: rgba(0,0,0, 0.1) 0 1px 10px;
+    padding: 20px 35px;
+    overflow-y: auto;
+}
+
+.column form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px; 
+}
+
+.column form input[type="text"],
+.column form input[type="email"],
+.column form input[type="password"] {
+    font-size: 14px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #dedede;
+}
+
+.column form input[type="submit"] {
+    background-color: #4285f4;
+    color: #fff;
+    height: 36px;
+    width: 88px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition-duration: 300ms;
+}
+.column form input[type="submit"]:hover{
+    background-color: gray;
+    color: black;
+    font-weight: bold;
+    border: solid black 2px;
+
+
+}
+.column .header{
+padding:  20px 0px;
+    
+}
+.column .header h3{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0px;
+    padding-top: 16px;
+    color: black;
+}
+.column .header span{
+    font-size: 15px;
+}
+.column .header img{
+    text-align: center;
+    position: relative;
+    right: 20px;
+    width: 170px;
+}
+.signInMessage{
+    font-size: 14px;
+    font-weight: 100;
+    text-decoration: none;
+    text-decoration-line: none;
+    color: rgb(46, 46, 228);
+}
+.errorMessage{
+    color: red;
+    font-size: 14px;
+    font-weight: 400;
+    /* text-align: center; */
+}
+.previewImage,
+.previewVideo{
+
+    width:  100%;
+}
+.previewOverlay{
+    width: 100%;
+    height: 100%;
+    color: rgba(0,0,0,0.5);
+    position: absolute;
+}
+.previewContainer{
+    position: relative;
+    display: flex;
+    
+}
+
+.previewContainer.small{
+    width: 230px;
+    height: 129px;
+    margin-right: 4px;
+    display: inline-flex;
+}
+.previewContainer.small img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.mainDetails h3{
+    color: #fff;
+    font-size: 40px;
+    margin: 15px 0;
+    top: 35%;
+
+}
+.mainDetails h4{
+    color: #b1b1b1;
+    font-size: 20px;
+    margin: 15px 0;
+    top: 35%;
+
+}
+.mainDetails{
+    position: relative;
+    top: 35%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+ .mainDetails button{
+    color: #fff;
+    background-color: rgba(51,51,51,0.4);
+    border: none;
+    min-width: 150px;
+    padding: 0px 38px;
+    height: 50px;
+    max-height: 50px;
+    font-size: 20px;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+ 
+}
+.mainDetails button i{
+    color: inherit;
+}
+.mainDetails button:hover{
+    background-color: #e6e6e6;
+    color: black;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+.entities, .videos{
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+}
+.entities::-webkit-scrollbar{
+    display: none;
+}
+.videos::-webkit-scrollbar{
+    display: none;
+}
+.category h3{
+    color: #e5e5e5;
+    font-size: 28px;
+    
+}
+a h3:hover{
+    color: #fff;
+}
+.errorBanner{
+    color: white;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family:cursive;
+}
+.season{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+
+}
+.episodeContainer{
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 4px;
+}
+.episodeContainer .contents{
+            display: flex;
+            flex-direction: column;
+            width: 230px;
+            position: relative;
+
+}
+.episodeContainer img{
+    width: 230px;
+    height: 129px;
+    object-fit: cover;
+    
+}
+.episodeContainer .videoInfo h4,
+.episodeContainer .videoInfo span{
+color: white;
+width: 100%;
+white-space: normal;
+
+}
+
+.episodeContainer .videoInfo{
+    max-height: 200px;
+    overflow-y: auto;
+
+}
+.previewCategories.noScroll .category .videos{
+white-space: normal;
+
+}
+.watchContainer video{
+    
+    width: 100%;
+}
+.videoControls{
+position: absolute;
+width: 100%;
+z-index: 1;
+display: flex;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.3);
+}
+.videoControls h1{
+    color: #fff;
+}
+.videoControls button {
+    font-size: 50px;
+    padding: 50px;
+    color: white; 
+    background-color: transparent;
+    border: none;
+}
+.fa-arrow-left:before{
+    color: white;
+}
+
+.upNext{
+position: absolute;
+display: inline-block;
+/* height: 100%; */
+top: 30%;
+left: 35%;
+z-index: 2;
+}
+.upNext .redo{
+    position: absolute;
+    background: transparent;
+    border-style: none;
+    left: -113px;
+    top: 63px;
+    font-size: 89px;
+}
+.upNext .redo i{
+    color: white;
+}
+
+.upNextContainer button{
+    padding: 0;
+    background-color: transparent;
+    color: white;
+   font-size: 50px;
+   border-style: none;
+   
+}
+.upNextContainer h2, .upNextContainer h3{
+color: #fff;
+}
+.playNext i{
+    margin-right: 10px;
+    color: white;
+}
+ .seen{
+    color: #4285f4;
+    font-size: 26px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+ }
+ .topBar{
+    /* background-color: #1414147a; */
+position: fixed;
+width: 100%;
+z-index: 1;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+padding: 0 60px;
+height: 70px;
+box-sizing: border-box;
+/* min-width: 890px; */
+transition-property: background-color;
+transition-duration: 500ms;
+transition-timing-function: linear
+ }
+.topBar.scrolled{
+    background-color: #040404df;
+    transition-property: background-color;
+    transition-duration: 1000ms;
+    transition-timing-function: linear;
+}
+
+ .logoContainer{
+    height: 40px;
+
+ }
+ .logoContainer img{
+    height: 100%;
+    
+ }
+ .navLinks{
+        
+    display: flex;
+    list-style: none;
+ }
+ 
+
+ .navLinks a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 20px;
+    
+ }
+ .rightItems{
+    text-align: right;
+    flex: 1;
+
+ }
+ .rightItems i{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+ }
+ .previewCategories h1{
+    color: #e5e5e5;
+ }
+ .textboxContainer{
+    padding: 100px 50px;
+ }
+ .searchInput{
+    height: 50px;
+    width: 600px;
+    border: 1px solid #dedede;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+ }
+ .settingsContainer{
+    padding-top: 60px;
+    background-color: transparent;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .settingsContainer h2{
+    color: white;
+    margin-top: 0;
+ }
+ .settingsContainer .formSection{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 20px;
+ }
+ .settingsContainer form input[type="text"],
+ .settingsContainer form input[type="email"],
+ .settingsContainer form input[type="password"]{
+    width: 300px; 
+    height: 40px;
+    font-size: 15px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 3px;
+    padding: 0 5px;
+ }
+ .settingsContainer form input[type="submit"]{
+    background-color: red;
+    width: 100px;
+    height: 40px;
+ }
+ .alertSuccess, .alertError{
+           margin: 10px 0;
+ }
+ .alertError{
+    color: red;
+ }
+ .alertSuccess{
+    color: rgb(10, 100, 135);
+ }
+ .formSection h3{
+    padding: 0;
+    color: #fff;
+    font-size: 20px;
+ }
