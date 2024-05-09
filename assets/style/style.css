@@ -1,8 +1,8 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
     box-sizing: border-box;
- 
+
 }
 
 html,
@@ -11,12 +11,14 @@ body {
     padding: 0;
     margin: 0;
 }
-.wrapper{
-    
+
+.wrapper {
+
     min-width: 1050;
     min-height: 100%;
     background-color: #141414;
 }
+
 .signInContainer {
     background-color: #efefee;
     height: 100vh;
@@ -24,16 +26,18 @@ body {
     align-items: center;
     justify-content: center;
 }
-a{
+
+a {
     text-decoration: none;
     color: #0654ba;
 }
+
 .column {
     background-color: #fff;
     min-height: 300px;
     max-height: 100%;
     width: 450px;
-    box-shadow: rgba(0,0,0, 0.1) 0 1px 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 10px;
     padding: 20px 35px;
     overflow-y: auto;
 }
@@ -41,7 +45,7 @@ a{
 .column form {
     display: flex;
     flex-direction: column;
-    padding-top: 24px; 
+    padding-top: 24px;
 }
 
 .column form input[type="text"],
@@ -66,7 +70,8 @@ a{
     font-size: 16px;
     transition-duration: 300ms;
 }
-.column form input[type="submit"]:hover{
+
+.column form input[type="submit"]:hover {
     background-color: gray;
     color: black;
     font-weight: bold;
@@ -74,11 +79,13 @@ a{
 
 
 }
-.column .header{
-padding:  20px 0px;
-    
+
+.column .header {
+    padding: 20px 0px;
+
 }
-.column .header h3{
+
+.column .header h3 {
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
@@ -86,71 +93,82 @@ padding:  20px 0px;
     padding-top: 16px;
     color: black;
 }
-.column .header span{
+
+.column .header span {
     font-size: 15px;
 }
-.column .header img{
+
+.column .header img {
     text-align: center;
     position: relative;
     right: 20px;
     width: 170px;
 }
-.signInMessage{
+
+.signInMessage {
     font-size: 14px;
     font-weight: 100;
     text-decoration: none;
     text-decoration-line: none;
     color: rgb(46, 46, 228);
 }
-.errorMessage{
+
+.errorMessage {
     color: red;
     font-size: 14px;
     font-weight: 400;
     /* text-align: center; */
 }
-.previewImage,
-.previewVideo{
 
-    width:  100%;
+.previewImage,
+.previewVideo {
+
+    width: 100%;
 }
-.previewOverlay{
+
+.previewOverlay {
     width: 100%;
     height: 100%;
-    color: rgba(0,0,0,0.5);
+    color: rgba(0, 0, 0, 0.5);
     position: absolute;
 }
-.previewContainer{
+
+.previewContainer {
     position: relative;
     display: flex;
-    
+
 }
 
-.previewContainer.small{
+.previewContainer.small {
     width: 230px;
     height: 129px;
     margin-right: 4px;
     display: inline-flex;
 }
-.previewContainer.small img{
-width: 100%;
-height: 100%;
-object-fit: cover;
+
+.previewContainer.small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.mainDetails h3{
+
+.mainDetails h3 {
     color: #fff;
     font-size: 40px;
     margin: 15px 0;
     top: 35%;
 
 }
-.mainDetails h4{
+
+.mainDetails h4 {
     color: #b1b1b1;
     font-size: 20px;
     margin: 15px 0;
     top: 35%;
 
 }
-.mainDetails{
+
+.mainDetails {
     position: relative;
     top: 35%;
     margin-left: 50px;
@@ -158,9 +176,10 @@ object-fit: cover;
     flex-direction: column;
 
 }
- .mainDetails button{
+
+.mainDetails button {
     color: #fff;
-    background-color: rgba(51,51,51,0.4);
+    background-color: rgba(51, 51, 51, 0.4);
     border: none;
     min-width: 150px;
     padding: 0px 38px;
@@ -171,125 +190,147 @@ object-fit: cover;
     margin-bottom: 15px;
     margin-right: 5px;
     cursor: pointer;
- 
+
 }
-.mainDetails button i{
+
+.mainDetails button i {
     color: inherit;
 }
-.mainDetails button:hover{
+
+.mainDetails button:hover {
     background-color: #e6e6e6;
     color: black;
 }
-.category{
+
+.category {
     display: flex;
     flex-direction: column;
     padding: 10px 0px;
 }
-.entities, .videos{
+
+.entities,
+.videos {
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
 
 }
-.entities::-webkit-scrollbar{
+
+.entities::-webkit-scrollbar {
     display: none;
 }
-.videos::-webkit-scrollbar{
+
+.videos::-webkit-scrollbar {
     display: none;
 }
-.category h3{
+
+.category h3 {
     color: #e5e5e5;
     font-size: 28px;
-    
+
 }
-a h3:hover{
+
+a h3:hover {
     color: #fff;
 }
-.errorBanner{
+
+.errorBanner {
     color: white;
     position: absolute;
     top: 25%;
     width: 100%;
     text-align: center;
     font-size: 25px;
-    font-family:cursive;
+    font-family: cursive;
 }
-.season{
+
+.season {
     display: flex;
     flex-direction: column;
     padding: 10px 50px;
 
 }
-.episodeContainer{
+
+.episodeContainer {
     display: inline-flex;
     justify-content: center;
     margin-right: 4px;
 }
-.episodeContainer .contents{
-            display: flex;
-            flex-direction: column;
-            width: 230px;
-            position: relative;
+
+.episodeContainer .contents {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    position: relative;
 
 }
-.episodeContainer img{
+
+.episodeContainer img {
     width: 230px;
     height: 129px;
     object-fit: cover;
-    
+
 }
+
 .episodeContainer .videoInfo h4,
-.episodeContainer .videoInfo span{
-color: white;
-width: 100%;
-white-space: normal;
+.episodeContainer .videoInfo span {
+    color: white;
+    width: 100%;
+    white-space: normal;
 
 }
 
-.episodeContainer .videoInfo{
+.episodeContainer .videoInfo {
     max-height: 200px;
     overflow-y: auto;
 
 }
-.previewCategories.noScroll .category .videos{
-white-space: normal;
+
+.previewCategories.noScroll .category .videos {
+    white-space: normal;
 
 }
-.watchContainer video{
-    
+
+.watchContainer video {
+
     width: 100%;
 }
-.videoControls{
-position: absolute;
-width: 100%;
-z-index: 1;
-display: flex;
-align-items: center;
-background-color: rgba(0, 0, 0, 0.3);
+
+.videoControls {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
 }
-.videoControls h1{
+
+.videoControls h1 {
     color: #fff;
 }
+
 .videoControls button {
     font-size: 50px;
     padding: 50px;
-    color: white; 
+    color: white;
     background-color: transparent;
     border: none;
 }
-.fa-arrow-left:before{
+
+.fa-arrow-left:before {
     color: white;
 }
 
-.upNext{
-position: absolute;
-display: inline-block;
-/* height: 100%; */
-top: 30%;
-left: 35%;
-z-index: 2;
+.upNext {
+    position: absolute;
+    display: inline-block;
+    /* height: 100%; */
+    top: 30%;
+    left: 35%;
+    z-index: 2;
 }
-.upNext .redo{
+
+.upNext .redo {
     position: absolute;
     background: transparent;
     border-style: none;
@@ -297,94 +338,108 @@ z-index: 2;
     top: 63px;
     font-size: 89px;
 }
-.upNext .redo i{
+
+.upNext .redo i {
     color: white;
 }
 
-.upNextContainer button{
+.upNextContainer button {
     padding: 0;
     background-color: transparent;
     color: white;
-   font-size: 50px;
-   border-style: none;
-   
+    font-size: 50px;
+    border-style: none;
+
 }
-.upNextContainer h2, .upNextContainer h3{
-color: #fff;
+
+.upNextContainer h2,
+.upNextContainer h3 {
+    color: #fff;
 }
-.playNext i{
+
+.playNext i {
     margin-right: 10px;
     color: white;
 }
- .seen{
+
+.seen {
     color: #4285f4;
     font-size: 26px;
     position: absolute;
     top: 5px;
     left: 5px;
- }
- .topBar{
+}
+
+.topBar {
     /* background-color: #1414147a; */
-position: fixed;
-width: 100%;
-z-index: 1;
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-padding: 0 60px;
-height: 70px;
-box-sizing: border-box;
-/* min-width: 890px; */
-transition-property: background-color;
-transition-duration: 500ms;
-transition-timing-function: linear
- }
-.topBar.scrolled{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 60px;
+    height: 70px;
+    box-sizing: border-box;
+    /* min-width: 890px; */
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-timing-function: linear
+}
+
+.topBar.scrolled {
     background-color: #040404df;
     transition-property: background-color;
-    transition-duration: 1000ms;
+    transition-duration: 500ms;
     transition-timing-function: linear;
 }
 
- .logoContainer{
+.logoContainer {
     height: 40px;
 
- }
- .logoContainer img{
+}
+
+.logoContainer img {
     height: 100%;
-    
- }
- .navLinks{
-        
+
+}
+
+.navLinks {
+
     display: flex;
     list-style: none;
- }
- 
+}
 
- .navLinks a{
+
+.navLinks a {
     text-decoration: none;
     color: #fff;
     font-size: 14px;
     margin-left: 20px;
-    
- }
- .rightItems{
+
+}
+
+.rightItems {
     text-align: right;
     flex: 1;
 
- }
- .rightItems i{
+}
+
+.rightItems i {
     color: #fff;
     font-size: 20px;
     margin-left: 10px;
- }
- .previewCategories h1{
+}
+
+.previewCategories h1 {
     color: #e5e5e5;
- }
- .textboxContainer{
+}
+
+.textboxContainer {
     padding: 100px 50px;
- }
- .searchInput{
+}
+
+.searchInput {
     height: 50px;
     width: 600px;
     border: 1px solid #dedede;
@@ -393,52 +448,175 @@ transition-timing-function: linear
     font-size: 20px;
     padding: 5px 10px;
     border-radius: 5px;
- }
- .settingsContainer{
+}
+
+.settingsContainer {
     padding-top: 60px;
     background-color: transparent;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
- }
- .settingsContainer h2{
+}
+
+.settingsContainer h2 {
     color: white;
     margin-top: 0;
- }
- .settingsContainer .formSection{
+}
+
+.settingsContainer .formSection {
     display: flex;
     flex-direction: column;
     margin: 20px 0;
     border-bottom: 1px solid #dedede;
     padding-bottom: 20px;
- }
- .settingsContainer form input[type="text"],
- .settingsContainer form input[type="email"],
- .settingsContainer form input[type="password"]{
-    width: 300px; 
+}
+
+.settingsContainer form input[type="text"],
+.settingsContainer form input[type="email"],
+.settingsContainer form input[type="password"] {
+    width: 300px;
     height: 40px;
     font-size: 15px;
     margin: 5px 0;
     border: none;
     border-radius: 3px;
     padding: 0 5px;
- }
- .settingsContainer form input[type="submit"]{
+}
+
+.settingsContainer form input[type="submit"] {
     background-color: red;
     width: 100px;
     height: 40px;
- }
- .alertSuccess, .alertError{
-           margin: 10px 0;
- }
- .alertError{
+}
+
+.alertSuccess,
+.alertError {
+    margin: 10px 0;
+}
+
+.alertError {
     color: red;
- }
- .alertSuccess{
+}
+
+.alertSuccess {
     color: rgb(10, 100, 135);
- }
- .formSection h3{
+}
+
+.formSection h3 {
     padding: 0;
     color: #fff;
     font-size: 20px;
- }
+}
+
+.checkbtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+/* responsive */
+@media (max-width: 593px) {
+    .logoContainer {
+        height: 25px;
+        position: fixed;
+        top: 10px;
+        left: 7px;
+    }
+
+    .navLinks {
+        position: fixed;
+        top: -5px;
+    }
+
+    .rightItems {
+        position: fixed;
+        top: 11px;
+        right: 13px;
+    }
+
+    .videoControls button {
+        font-size: 36px;
+        padding: 11px;
+        color: white;
+        background-color: transparent;
+        border: none;
+    }
+
+    .videoControls h1 {
+        font-size: 23px;
+    }
+
+    .searchInput {
+        width: 295px;
+    }
+
+    .topBar.scrolled {
+        height: 45px;
+    }
+}
+
+@media (max-width: 490px) {
+
+    .mainDetails {
+        position: relative;
+        top: 21%;
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .mainDetails h3 {
+        font-size: 20px;
+    }
+
+    .mainDetails h4 {
+        font-size: 16px;
+    }
+
+    .mainDetails button {
+        min-width: 111px;
+        padding: 0px 22px;
+        height: 45px;
+        max-height: 38px;
+        font-size: 17px;
+        border-radius: 7px;
+        margin-bottom: 15px;
+        margin-right: 11px;
+    }
+}
+
+@media (max-width: 402px) {
+
+    .rightItems i {
+        color: #fff;
+        font-size: 14px;
+        margin-left: 7px;
+    }
+
+    .navLinks a {
+        font-weight: bold;
+        text-decoration: none;
+        color: #e4e4e4;
+        font-size: 13px;
+        margin-left: 12px;
+    }
+
+}
+
+@media (max-width: 402px) {
+
+    .mainDetails button {
+        min-width: 101px;
+        padding: 0px 22px;
+        height: 45px;
+        max-height: 32px;
+        font-size: 14px;
+        border-radius: 7px;
+        margin-bottom: 15px;
+        margin-right: 6px;
+    }
+}
